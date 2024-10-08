@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Helvetica'; 
+  src: url('./fonts/Helvetica.ttf') format('ttf'),
+    url('./fonts/Helvetica-Bold.ttf') format('ttf'),
+    url('./fonts/Helvetica-BoldOblique.ttf') format('ttf'),
+    url('./fonts/Helvetica-Oblique.ttf') format('ttf'),
+    url('./fonts/helvetica-compressed-5871d14b6903a.otf') format('ttf'),
+    url('./fonts/helvetica-light-587ebe5a59211.ttf') format('ttf'),
+    url('./fonts/helvetica-rounded-bold-5871d05ead8de.otf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --color-text-1: #fff;
+  --color-text-2: #000;
+  --color-background-1:"#4a0080" ;
+  --color-background-2:#d6c3ff;
+
+}
