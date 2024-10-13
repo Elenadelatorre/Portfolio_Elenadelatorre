@@ -17,19 +17,18 @@ const educationData = [
     institution: 'Aula Directa',
     year: '2022'
   }
-  
 ];
 
 const Education = () => {
   return (
     <Box
       id='education'
-      height='100vh'
       background='linear-gradient(135deg, #4a0080, #9e00ff)'
-      px={8}
+      ml={{ base: 0, lg: '25%' }}
+      px={{ base: 4, md: 10 }}
       py={4}
       overflowY='auto'
-      ml='30%'
+      minHeight='100vh'
     >
       <Text
         fontFamily='Helvetica, sans-serif'
@@ -55,9 +54,17 @@ const Education = () => {
               alignItems='start'
               boxShadow={education.title.includes('Máster') ? 'xl' : 'md'} // Sombra más pronunciada para el máster
               color='white'
-              border={education.title.includes('Máster') ? '2px solid #f481dd' : 'none'} // Borde adicional para el máster
+              border={
+                education.title.includes('Máster')
+                  ? '2px solid #f481dd'
+                  : 'none'
+              } // Borde adicional para el máster
             >
-              <Heading as='h3' size={education.title.includes('Máster') ? 'lg' : 'md'} color='white'>
+              <Heading
+                as='h3'
+                size={education.title.includes('Máster') ? 'lg' : 'md'}
+                color='white'
+              >
                 {education.title}
               </Heading>
               <Text fontSize={education.title.includes('Máster') ? 'lg' : 'md'}>

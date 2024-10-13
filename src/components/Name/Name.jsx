@@ -5,23 +5,22 @@ const Name = () => {
   const lastName = 'DE LA TORRE';
 
   return (
-    <Box>
-      {/* Nombre con un estilo específico */}
+    <Box textAlign='center'>
+      {' '}
+      {/* Centra el texto */}
       <Text
         fontFamily='Helvetica, sans-serif'
-        fontSize='7xl'
+        fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} // Tamaños responsivos
         color='#f481dd'
         display='inline'
         fontWeight='bold'
-        mr={6} // Margen entre el nombre y el apellido
+        mr={2} // Margen entre el nombre y el apellido
       >
         {firstName}
       </Text>
-
-      {/* Apellido con otro estilo diferente */}
       <Text
         fontFamily='Helvetica, sans-serif'
-        fontSize='7xl'
+        fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} // Tamaños responsivos
         color='#50dd94'
         display='inline'
         ml={2} // Margen entre el nombre y el apellido

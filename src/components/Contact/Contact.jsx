@@ -16,7 +16,7 @@ const Contact = () => {
       <Box textAlign='center' maxW='600px'>
         <Text
           fontFamily='Helvetica, sans-serif'
-          fontSize='5xl'
+          fontSize={{ base: '3xl', md: '5xl' }}
           color='#f481dd'
           fontWeight='bold'
           textTransform='uppercase'
@@ -33,8 +33,16 @@ const Contact = () => {
             mb={4}
             _hover={{ transform: 'scale(1.05)', transition: '0.3s' }}
           >
-            <Icon as={FaEnvelope} w={8} h={8} color='orange' mr={3} />
-            <Text color='white' fontSize='xl'>elenadelatorre1806@gmail.com</Text>
+            <Icon
+              as={FaEnvelope}
+              w={{ base: 6, md: 8 }}
+              h={{ base: 6, md: 8 }}
+              color='orange'
+              mr={3}
+            />
+            <Text color='white' fontSize={{ base: 'md', md: 'xl' }}>
+              elenadelatorre1806@gmail.com
+            </Text>
           </Flex>
 
           {/* Teléfono */}
@@ -43,8 +51,16 @@ const Contact = () => {
             mb={4}
             _hover={{ transform: 'scale(1.05)', transition: '0.3s' }}
           >
-            <Icon as={FaPhone} w={8} h={8} color='#50dd94' mr={3} />
-            <Text color='white' fontSize='xl'>+34 627 61 78 94</Text>
+            <Icon
+              as={FaPhone}
+              w={{ base: 6, md: 8 }}
+              h={{ base: 6, md: 8 }}
+              color='#50dd94'
+              mr={3}
+            />
+            <Text color='white' fontSize={{ base: 'md', md: 'xl' }}>
+              +34 627 61 78 94
+            </Text>
           </Flex>
 
           {/* LinkedIn */}
@@ -52,11 +68,17 @@ const Contact = () => {
             alignItems='center'
             _hover={{ transform: 'scale(1.05)', transition: '0.3s' }}
           >
-            <Icon as={FaLinkedin} w={8} h={8} color='#61DBFB' mr={3} />
+            <Icon
+              as={FaLinkedin}
+              w={{ base: 6, md: 8 }}
+              h={{ base: 6, md: 8 }}
+              color='#61DBFB'
+              mr={3}
+            />
             <Link
               href='https://www.linkedin.com/in/elenadelatorrelopez/'
               color='white'
-              fontSize='xl'
+              fontSize={{ base: 'md', md: 'xl' }}
               isExternal
             >
               linkedin.com/in/elenadelatorrelopez/

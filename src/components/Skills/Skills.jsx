@@ -56,12 +56,12 @@ const Skills = () => {
   return (
     <Box
       id='skills'
-      height='100vh'
-      background='linear-gradient(135deg, #4a0080, #9e00ff)' // Morado oscuro
-      px={8}
+      background='linear-gradient(135deg, #4a0080, #9e00ff)'
+      ml={{ base: 0, lg: '25%' }}
+      px={{ base: 4, md: 10 }}
       py={4}
       overflowY='auto'
-      ml='30%'
+      minHeight='100vh'
     >
       <Text
         fontFamily='Helvetica, sans-serif'
