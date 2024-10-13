@@ -6,13 +6,12 @@ import {
   FaGraduationCap,
   FaTools,
   FaEnvelope
-} from 'react-icons/fa'; // Importa los íconos
+} from 'react-icons/fa';
 import About from '../About/About';
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState('home');
 
-  // Maneja el desplazamiento
   const handleScroll = () => {
     const sections = ['home', 'projects', 'skills', 'contact'];
     let currentSection = '';
@@ -44,7 +43,7 @@ const Home = () => {
         flexDirection='column'
         alignItems='center'
         justifyContent='center'
-        width='30%'
+        width='25%'
         background='#d6c3ff'
         py={8}
         color='white'
@@ -54,13 +53,14 @@ const Home = () => {
         height='100vh'
         sx={{
           '@media (max-width: 1024px)': {
-            width: '40%',
-            py: 12
+            width: '30%', // Se ajusta mejor para laptops
+            py: 6
           },
           '@media (max-width: 768px)': {
             width: '100%',
             height: 'auto',
-            position: 'relative'
+            position: 'relative',
+            py: 4
           }
         }}
       >
@@ -78,20 +78,20 @@ const Home = () => {
           }}
         >
           <Box
-            backgroundColor='#9e00ff' 
-            borderRadius='10px' 
-            p={5} 
-            boxShadow='0px 4px 6px rgba(0, 0, 0, 0.1)' 
+            backgroundColor='#9e00ff'
+            borderRadius='10px'
+            p={3}
+            boxShadow='0px 4px 6px rgba(0, 0, 0, 0.1)'
           >
             <Image
               src='/assets/foto.jpg'
               alt='Mi Foto'
-              boxSize='250px'
+              boxSize='200px'
               objectFit='cover'
               borderRadius='10px'
               boxShadow='0px 10px 20px rgba(0, 0, 0, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.2)'
-              maxHeight={{ base: '150px', md: '250px', lg: '300px' }}
-              maxWidth={{ base: '150px', md: '250px', lg: '300px' }}
+              maxHeight={{ base: '150px', md: '200px', lg: '250px' }}
+              maxWidth={{ base: '150px', md: '200px', lg: '250px' }}
               sx={{
                 '@media (max-width: 768px)': {
                   boxSize: '150px'
@@ -103,7 +103,7 @@ const Home = () => {
 
         {/* Barra de navegación */}
         <Box
-          width='30%'
+          width='80%'
           background='#d6c3ff'
           display='flex'
           flexDirection='column'
@@ -112,14 +112,14 @@ const Home = () => {
           color='#4a0080'
           fontWeight='790'
           fontSize='xl'
-          p={6}
+          p={4}
           sx={{
             '@media (max-width: 1024px)': {
-              width: '50%',
-              gap: 8
+              width: '80%',
+              gap: 4
             },
             '@media (max-width: 768px)': {
-              width: '80%',
+              width: '100%',
               p: 4
             }
           }}
@@ -177,8 +177,7 @@ const Home = () => {
               display='flex'
               alignItems='center'
             >
-              <FaEnvelope style={{ marginRight: '8px' }} />{' '}
-              {/* Ícono de "Contacto" */}
+              <FaEnvelope style={{ marginRight: '8px' }} />
               Contacto
             </Box>
           </Flex>
@@ -190,13 +189,13 @@ const Home = () => {
         flexDirection='column'
         justifyContent='flex-start'
         alignItems='flex-start'
-        width='70%'
+        width='75%'
         background='linear-gradient(135deg, #4a0080, #9e00ff)'
-        ml='30%'
+        ml='25%'
         sx={{
           '@media (max-width: 1024px)': {
-            width: '60%',
-            ml: '40%'
+            width: '70%',
+            ml: '30%'
           },
           '@media (max-width: 768px)': {
             width: '100%',
