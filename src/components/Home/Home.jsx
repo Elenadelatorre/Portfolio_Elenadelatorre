@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Flex, Box, Image } from '@chakra-ui/react';
+import {
+  FaUser,
+  FaProjectDiagram,
+  FaGraduationCap,
+  FaTools,
+  FaEnvelope
+} from 'react-icons/fa'; // Importa los íconos
 import About from '../About/About';
 
 const Home = () => {
@@ -47,14 +54,14 @@ const Home = () => {
         height='100vh'
         sx={{
           '@media (max-width: 1024px)': {
-            width: '40%', // Ajuste del ancho en pantallas medianas (portátiles)
-            py: 12, // Más espacio vertical (padding) en portátiles
+            width: '40%',
+            py: 12
           },
           '@media (max-width: 768px)': {
-            width: '100%', // Ancho completo en móviles
+            width: '100%',
             height: 'auto',
-            position: 'relative', // Pasa a posición relativa en móviles
-          },
+            position: 'relative'
+          }
         }}
       >
         {/* Imagen */}
@@ -66,25 +73,32 @@ const Home = () => {
           mb={50}
           sx={{
             '@media (max-width: 1024px)': {
-              mb: 8, // Reduce el margen inferior en pantallas medianas
-            },
+              mb: 8
+            }
           }}
         >
-          <Image
-            src='/assets/foto.jpg'
-            alt='Mi Foto'
-            boxSize='250px'
-            objectFit='cover'
-            borderRadius='10px'
-            boxShadow='0px 10px 20px rgba(0, 0, 0, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.2)'
-            maxHeight={{ base: '150px', md: '250px', lg: '300px' }} // Ajusta altura
-            maxWidth={{ base: '150px', md: '250px', lg: '300px' }}  // Ajusta anchura
-            sx={{
-              '@media (max-width: 768px)': {
-                boxSize: '150px', // Tamaño más pequeño en móviles
-              },
-            }}
-          />
+          <Box
+            backgroundColor='#9e00ff' 
+            borderRadius='10px' 
+            p={5} 
+            boxShadow='0px 4px 6px rgba(0, 0, 0, 0.1)' 
+          >
+            <Image
+              src='/assets/foto.jpg'
+              alt='Mi Foto'
+              boxSize='250px'
+              objectFit='cover'
+              borderRadius='10px'
+              boxShadow='0px 10px 20px rgba(0, 0, 0, 0.3), 0px 20px 40px rgba(0, 0, 0, 0.2)'
+              maxHeight={{ base: '150px', md: '250px', lg: '300px' }}
+              maxWidth={{ base: '150px', md: '250px', lg: '300px' }}
+              sx={{
+                '@media (max-width: 768px)': {
+                  boxSize: '150px'
+                }
+              }}
+            />
+          </Box>
         </Box>
 
         {/* Barra de navegación */}
@@ -101,13 +115,13 @@ const Home = () => {
           p={6}
           sx={{
             '@media (max-width: 1024px)': {
-              width: '50%', // Ajuste del ancho en pantallas medianas
-              gap: 8, // Añade más espacio entre los elementos de navegación
+              width: '50%',
+              gap: 8
             },
             '@media (max-width: 768px)': {
-              width: '80%', // Ancho mayor en móviles
-              p: 4, // Reduce el padding en móviles
-            },
+              width: '80%',
+              p: 4
+            }
           }}
         >
           <Flex flexDirection='column' gap={5}>
@@ -116,7 +130,10 @@ const Home = () => {
               href='#about'
               _hover={{ textDecoration: 'none', color: 'pink.400' }}
               color={activeSection === 'home' ? 'pink.300' : '#4a0080'}
+              display='flex'
+              alignItems='center'
             >
+              <FaUser style={{ marginRight: '8px' }} />
               Sobre mí
             </Box>
             <Box
@@ -124,7 +141,10 @@ const Home = () => {
               href='#projects'
               _hover={{ textDecoration: 'none', color: 'pink.300' }}
               color={activeSection === 'projects' ? 'pink.300' : '#4a0080'}
+              display='flex'
+              alignItems='center'
             >
+              <FaProjectDiagram style={{ marginRight: '8px' }} />
               Proyectos
             </Box>
             <Box
@@ -132,7 +152,10 @@ const Home = () => {
               href='#education'
               _hover={{ textDecoration: 'none', color: 'pink.300' }}
               color={activeSection === 'education' ? 'pink.300' : '#4a0080'}
+              display='flex'
+              alignItems='center'
             >
+              <FaGraduationCap style={{ marginRight: '8px' }} />
               Educación
             </Box>
             <Box
@@ -140,15 +163,22 @@ const Home = () => {
               href='#skills'
               _hover={{ textDecoration: 'none', color: 'pink.300' }}
               color={activeSection === 'skills' ? 'pink.300' : '#4a0080'}
+              display='flex'
+              alignItems='center'
             >
-              Skills
+              <FaTools style={{ marginRight: '8px' }} />
+              Habilidades
             </Box>
             <Box
               as='a'
               href='#contact'
               _hover={{ textDecoration: 'none', color: 'pink.300' }}
               color={activeSection === 'contact' ? 'pink.300' : '#4a0080'}
+              display='flex'
+              alignItems='center'
             >
+              <FaEnvelope style={{ marginRight: '8px' }} />{' '}
+              {/* Ícono de "Contacto" */}
               Contacto
             </Box>
           </Flex>
@@ -161,18 +191,18 @@ const Home = () => {
         justifyContent='flex-start'
         alignItems='flex-start'
         width='70%'
-        background='#4a0080' // Morado oscuro
-        ml='30%' // Deja espacio para el contenedor izquierdo
+        background='linear-gradient(135deg, #4a0080, #9e00ff)'
+        ml='30%'
         sx={{
           '@media (max-width: 1024px)': {
-            width: '60%', // Ajuste del ancho en pantallas medianas
-            ml: '40%', // Ajusta el margen izquierdo en portátiles
+            width: '60%',
+            ml: '40%'
           },
           '@media (max-width: 768px)': {
-            width: '100%', // Ancho completo en móviles
-            ml: 0, // Elimina el margen izquierdo en móviles
-            mt: 4, // Añade espacio superior
-          },
+            width: '100%',
+            ml: 0,
+            mt: 4
+          }
         }}
       >
         <About />
@@ -182,4 +212,3 @@ const Home = () => {
 };
 
 export default Home;
-

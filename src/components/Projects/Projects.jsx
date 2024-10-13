@@ -71,7 +71,7 @@ const Projects = () => {
   return (
     <Box
       id='projects'
-      backgroundColor='#4a0080'
+      background='linear-gradient(135deg, #4a0080, #9e00ff)'
       px={8}
       py={4}
       overflowY='auto'

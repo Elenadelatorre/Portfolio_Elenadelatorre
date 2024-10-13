@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Helvetica'; 
+  font-family: 'Helvetica';
   src: url('./fonts/Helvetica.ttf') format('ttf'),
     url('./fonts/Helvetica-Bold.ttf') format('ttf'),
     url('./fonts/Helvetica-BoldOblique.ttf') format('ttf'),
@@ -11,10 +11,9 @@
   font-style: normal;
 }
 
-:root{
+:root {
   --color-text-1: #fff;
   --color-text-2: #000;
-  --color-background-1:"#4a0080" ;
-  --color-background-2:#d6c3ff;
-
+  --color-background-1: linear-gradient(135deg, #4a0080, #9e00ff);
+  --color-background-2: #d6c3ff;
 }

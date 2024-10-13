@@ -25,7 +25,7 @@ const Education = () => {
     <Box
       id='education'
       height='100vh'
-      backgroundColor='#4a0080' // Morado oscuro
+      background='linear-gradient(135deg, #4a0080, #9e00ff)'
       px={8}
       py={4}
       overflowY='auto'
