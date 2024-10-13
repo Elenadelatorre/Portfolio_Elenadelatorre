@@ -43,7 +43,7 @@ const SocialIcons = () => {
       <Tooltip label='Descargar CV' placement='top' hasArrow>
         <IconButton
           as='a'
-          href='/cv.pdf'
+          href='/assets/CV_EdelaTorre.pdf'
           aria-label='Descargar CV'
           icon={<FaFileDownload />}
           _hover={{ color: 'pink.300' }}
