@@ -23,7 +23,7 @@ const Education = () => {
   return (
     <Box
       id='education'
-      background='linear-gradient(135deg, #4a0080, #9e00ff)'
+      background='var(--color-background-1)'
       ml={{ base: 0, lg: '25%' }}
       px={{ base: 4, md: 10 }}
       py={4}
@@ -33,7 +33,7 @@ const Education = () => {
       <Text
         fontFamily='Helvetica, sans-serif'
         fontSize='4xl'
-        color='#f481dd'
+        color='var(--color-text-3)'
         fontWeight='780'
         textTransform={'uppercase'}
         mb={10}
@@ -48,17 +48,17 @@ const Education = () => {
             <Box
               p={4}
               borderRadius='md'
-              bg={education.title.includes('Máster') ? '#6c63ff' : '#483d8b'} // Diferencia el máster con un color más brillante
+              bg={education.title.includes('Máster') ? '#6c63ff' : '#483d8b'}
               display='flex'
               flexDirection='column'
               alignItems='start'
-              boxShadow={education.title.includes('Máster') ? 'xl' : 'md'} // Sombra más pronunciada para el máster
+              boxShadow={education.title.includes('Máster') ? 'xl' : 'md'}
               color='white'
               border={
                 education.title.includes('Máster')
-                  ? '2px solid #f481dd'
+                  ? '2px solid var(--color-text-3)'
                   : 'none'
-              } // Borde adicional para el máster
+              }
             >
               <Heading
                 as='h3'
@@ -74,8 +74,10 @@ const Education = () => {
                 {education.year}
               </Text>
               <Text color='white' mt={2} display='flex' alignItems='center'>
-                <FaCheck style={{ marginRight: '8px' }} color='#50dd94' />{' '}
-                {/* Ícono de tick */}
+                <FaCheck
+                  style={{ marginRight: '8px' }}
+                  color='var(--color-button)'
+                />{' '}
                 Completado
               </Text>
             </Box>

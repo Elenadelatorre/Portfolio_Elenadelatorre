@@ -12,7 +12,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = () => {
-    const sections = ['home', 'projects', 'skills', 'contact', 'education'];
+    const sections = ['about', 'projects', 'skills', 'contact', 'education'];
     let currentSection = '';
 
     sections.forEach((section) => {
@@ -41,9 +41,9 @@ const Navbar = () => {
       alignItems='center'
       justifyContent='center'
       width='25%'
-      background='#d6c3ff'
+      background='var(--color-background-2)'
       py={8}
-      color='white'
+      color='var-(--color-text-1)'
       position='fixed'
       left='0'
       top='0'
@@ -99,12 +99,11 @@ const Navbar = () => {
 
       <Box
         width='80%'
-        background='#d6c3ff'
         display='flex'
         flexDirection='column'
         justifyContent='center'
         alignItems='center'
-        color='#4a0080'
+        color='var(--color-text-4)'
         fontWeight='790'
         fontSize='xl'
         p={4}
@@ -123,8 +122,10 @@ const Navbar = () => {
           <Box
             as='a'
             href='#about'
-            _hover={{ textDecoration: 'none', color: 'pink.400' }}
-            color={activeSection === 'home' ? 'pink.300' : '#4a0080'}
+            _hover={{ textDecoration: 'none', color: 'pink.300' }}
+            color={
+              activeSection === 'about' ? 'pink.300' : 'var(--color-text-4)'
+            }
             display='flex'
             alignItems='center'
           >
@@ -135,7 +136,9 @@ const Navbar = () => {
             as='a'
             href='#projects'
             _hover={{ textDecoration: 'none', color: 'pink.300' }}
-            color={activeSection === 'projects' ? 'pink.300' : '#4a0080'}
+            color={
+              activeSection === 'projects' ? 'pink.300' : 'var(--color-text-4)'
+            }
             display='flex'
             alignItems='center'
           >
@@ -146,18 +149,22 @@ const Navbar = () => {
             as='a'
             href='#education'
             _hover={{ textDecoration: 'none', color: 'pink.300' }}
-            color={activeSection === 'education' ? 'pink.300' : '#4a0080'}
+            color={
+              activeSection === 'education' ? 'pink.300' : 'var(--color-text-4)'
+            }
             display='flex'
             alignItems='center'
           >
             <FaGraduationCap style={{ marginRight: '8px' }} />
-            Educación
+            Formación
           </Box>
           <Box
             as='a'
             href='#skills'
             _hover={{ textDecoration: 'none', color: 'pink.300' }}
-            color={activeSection === 'skills' ? 'pink.300' : '#4a0080'}
+            color={
+              activeSection === 'skills' ? 'pink.300' : 'var(--color-text-4)'
+            }
             display='flex'
             alignItems='center'
           >
@@ -168,7 +175,9 @@ const Navbar = () => {
             as='a'
             href='#contact'
             _hover={{ textDecoration: 'none', color: 'pink.300' }}
-            color={activeSection === 'contact' ? 'pink.300' : '#4a0080'}
+            color={
+              activeSection === 'contact' ? 'pink.300' : 'var(--color-text-4)'
+            }
             display='flex'
             alignItems='center'
           >

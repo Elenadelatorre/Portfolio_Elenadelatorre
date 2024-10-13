@@ -6,7 +6,7 @@ const Contact = () => {
     <Box
       id='contact'
       height='100vh'
-      background='linear-gradient(135deg, #4a0080, #9e00ff)'
+      background='var(--color-background-1)'
       px={8}
       py={4}
       display='flex'
@@ -17,7 +17,7 @@ const Contact = () => {
         <Text
           fontFamily='Helvetica, sans-serif'
           fontSize={{ base: '3xl', md: '5xl' }}
-          color='#f481dd'
+          color='var(--color-text-3)'
           fontWeight='bold'
           textTransform='uppercase'
           mb={12}
@@ -55,7 +55,7 @@ const Contact = () => {
               as={FaPhone}
               w={{ base: 6, md: 8 }}
               h={{ base: 6, md: 8 }}
-              color='#50dd94'
+              color='var(--color-button)'
               mr={3}
             />
             <Text color='white' fontSize={{ base: 'md', md: 'xl' }}>
@@ -63,7 +63,6 @@ const Contact = () => {
             </Text>
           </Flex>
 
-          {/* LinkedIn */}
           <Flex
             alignItems='center'
             _hover={{ transform: 'scale(1.05)', transition: '0.3s' }}

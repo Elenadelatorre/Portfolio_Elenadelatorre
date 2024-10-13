@@ -6,14 +6,12 @@ const Home = () => {
   return (
     <Flex height='100vh' width='100%' overflow='hidden' position='relative'>
       <Navbar />
-
-      {/* Contenedor derecho: Secciones */}
       <Flex
         flexDirection='column'
         justifyContent='flex-start'
         alignItems='flex-start'
         width='75%'
-        background='linear-gradient(135deg, #4a0080, #9e00ff)'
+        background='var(--color-background-1)'
         ml='25%'
         sx={{
           '@media (max-width: 1024px)': {

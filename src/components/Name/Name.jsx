@@ -7,23 +7,22 @@ const Name = () => {
   return (
     <Box textAlign='center'>
       {' '}
-      {/* Centra el texto */}
       <Text
         fontFamily='Helvetica, sans-serif'
-        fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} // Tamaños responsivos
-        color='#f481dd'
+        fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} 
+        color='var(--color-text-3)'
         display='inline'
         fontWeight='bold'
-        mr={2} // Margen entre el nombre y el apellido
+        mr={2} 
       >
         {firstName}
       </Text>
       <Text
         fontFamily='Helvetica, sans-serif'
-        fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} // Tamaños responsivos
-        color='#50dd94'
+        fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} 
+        color='var(--color-button)'
         display='inline'
-        ml={2} // Margen entre el nombre y el apellido
+        ml={2} 
         fontWeight='bold'
       >
         {lastName}

@@ -13,22 +13,22 @@ const SocialIcons = () => {
         <IconButton
           as='a'
           href='https://www.linkedin.com/in/elenadelatorrelopez'
-          target='_blank' // Abre en una nueva pestaña
-          rel='noopener noreferrer' // Mejora la seguridad
+          target='_blank'
+          rel='noopener noreferrer'
           aria-label='LinkedIn'
           icon={<FaLinkedin />}
-          _hover={{ color: 'pink.300' }} // Hover igual que el nombre
+          _hover={{ color: 'pink.300' }}
         />
       </Tooltip>
       <Tooltip label='GitHub' placement='top' hasArrow>
         <IconButton
           as='a'
           href='https://github.com/Elenadelatorre'
-          target='_blank' // Abre en una nueva pestaña
-          rel='noopener noreferrer' // Mejora la seguridad
+          target='_blank'
+          rel='noopener noreferrer'
           aria-label='GitHub'
           icon={<FaGithub />}
-          _hover={{ color: 'pink.300' }} // Hover igual que el nombre
+          _hover={{ color: 'pink.300' }}
         />
       </Tooltip>
       <Tooltip label='Email' placement='top' hasArrow>
@@ -37,16 +37,16 @@ const SocialIcons = () => {
           href='mailto:elenadelatorre1806@gmail.com'
           aria-label='Email'
           icon={<FaEnvelope />}
-          _hover={{ color: 'pink.300' }} // Hover igual que el nombre
+          _hover={{ color: 'pink.300' }}
         />
       </Tooltip>
       <Tooltip label='Descargar CV' placement='top' hasArrow>
         <IconButton
           as='a'
-          href='/cv.pdf' // Asegúrate de que esta ruta sea correcta
+          href='/cv.pdf'
           aria-label='Descargar CV'
           icon={<FaFileDownload />}
-          _hover={{ color: 'pink.300' }} // Hover igual que el nombre
+          _hover={{ color: 'pink.300' }}
         />
       </Tooltip>
     </Flex>

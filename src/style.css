@@ -14,6 +14,9 @@
 :root {
   --color-text-1: #fff;
   --color-text-2: #000;
+  --color-text-3: #f481dd;
+  --color-text-4: #4a0080;
   --color-background-1: linear-gradient(135deg, #4a0080, #9e00ff);
-  --color-background-2: #d6c3ff;
+  --color-background-2: #c8b9ff;
+  --color-button: #50dd94;
 }
