@@ -14,7 +14,7 @@ const Contact = () => {
       overflowY='auto'
       minHeight='100vh'
     >
-      <Box textAlign='center' maxW='600px'>
+      <Box textAlign='center' maxW='600px' ml='30px'>
         <Text
           fontFamily='Helvetica, sans-serif'
           fontSize={{ base: '3xl', md: '5xl' }}
