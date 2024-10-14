@@ -44,6 +44,7 @@ const SocialIcons = () => {
         <IconButton
           as='a'
           href='/assets/CV_EdelaTorre.pdf'
+          download='CV_EdelaTorre.pdf'
           aria-label='Descargar CV'
           icon={<FaFileDownload />}
           _hover={{ color: 'pink.300' }}

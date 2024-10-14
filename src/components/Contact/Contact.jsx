@@ -7,11 +7,12 @@ const Contact = () => {
       id='contact'
       height='100vh'
       background='var(--color-background-1)'
-      px={8}
-      py={4}
       display='flex'
-      alignItems='center'
-      justifyContent='center'
+      ml={{ base: 0, lg: '25%' }}
+      px={{ base: 4, md: 10 }}
+      py={100}
+      overflowY='auto'
+      minHeight='100vh'
     >
       <Box textAlign='center' maxW='600px'>
         <Text
